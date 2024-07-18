@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <meta charset="UTF-8">
+    <title>Student Websites</title>
+<style>
+
+    :root {
+    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
+    --primary: #ff6a3e;
+    --primaryLight: #ffba43;
+    --secondary: #ffba43;
+    --secondaryLight: #ffba43;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
+
+*, *:before, *:after {
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+}
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0rem;
+    margin-top:0rem;
+    display: block;
+}
+
+.cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+    text-indent: 50px;
+}
+                    /*-- -------------------------- -->
+<---          Steps             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #steps-1893 {
+    padding: var(--sectionPadding);
+    background-color: #F6EDDF;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #steps-1893 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 44rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  #steps-1893 .cs-image-group {
+    font-size: min(2.24vw, 0.9rem);
+    width: 30.125em;
+    height: 38.5em;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  #steps-1893 .cs-picture {
+    width: 25.8125em;
+    height: 37.0625em;
+    margin-top: 1.5em;
+    box-sizing: border-box;
+    background-color: #DAB692;
+    overflow: hidden;
+    border: 8px solid #DAB692;
+    border-radius: 16.25rem;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+  #steps-1893 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.7s;
+  }
+  #steps-1893 .cs-graphic {
+    height: auto;
+    position: absolute;
+  }
+  #steps-1893 .cs-brown {
+    width: 10.3125em;
+    height: auto;
+    top: 1.25em;
+    left: 1.5em;
+    z-index: -2;
+    transform: rotate(140deg);
+  }
+  #steps-1893 .cs-peach {
+    width: 4.3125em;
+    height: auto;
+    top: 1em;
+    left: 8.75em;
+    transform: rotate(-40deg);
+  }
+  #steps-1893 .cs-leaf {
+    width: 14em;
+    height: auto;
+    bottom: 0em;
+    right: 1em;
+    z-index: 1;
+  }
+  #steps-1893 .cs-dots {
+    width: 16.3125em;
+    height: auto;
+    left: 1em;
+    bottom: 1em;
+    z-index: -2;
+  }
+  #steps-1893 .cs-lines {
+    width: 15.375em;
+    right: 0;
+    bottom: 0em;
+  }
+  #steps-1893 .cs-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #steps-1893 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #steps-1893 .cs-topper {
+    color: var(--secondary);
+  }
+  #steps-1893 .cs-title {
+    margin: 0;
+  }
+  #steps-1893 .cs-card-group {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-items: stretch;
+    grid-auto-flow: row;
+    /* 24px - 32px */
+    gap: clamp(1.5rem, 3vw, 2rem);
+  }
+  #steps-1893 .cs-item {
+    list-style: none;
+    padding-bottom: 2rem;
+    border-bottom: #DED1BD 1px solid;
+    display: flex;
+    align-items: flex-start;
+    /* 16px - 24px */
+    gap: clamp(1rem, 2vw, 1.5rem);
+    position: relative;
+  }
+  #steps-1893 .cs-item:last-of-type {
+    border-bottom: none;
+  }
+  #steps-1893 .cs-number {
+    /* 49px - 72px */
+    font-size: clamp(3.0625rem, 6vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1.1875em;
+    color: var(--primary);
+    opacity: 0.2;
+    display: block;
+  }
+  #steps-1893 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.125em;
+    margin: 0 0 0.75rem 0;
+    color: var(--headerColor);
+  }
+  #steps-1893 .cs-item-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: left;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #steps-1893 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    align-items: stretch;
+    /* 48px - 60px */
+    gap: clamp(3rem, 6vw, 3.75rem);
+  }
+  #steps-1893 .cs-card-group {
+    /* 16px - 32px */
+    gap: clamp(1rem, 3vw, 2rem);
+  }
+  #steps-1893 .cs-item {
+    flex-direction: row;
+  }
+  #steps-1893 .cs-image-group {
+    font-size: min(1.5vw, 1rem);
+    height: auto;
+    min-height: 38.5em;
+    flex: none;
+    /* sends it to the right in the 2nd position */
+    order: 2;
+  }
+  #steps-1893 .cs-picture {
+    height: 96.266234%;
+  }
+  .homebutton{
+
+                display: inline-block;
+                outline: 0;
+                text-align: center;
+                cursor: pointer;
+                height: 34px;
+                padding: 0 13px;
+                color: #fff;
+                vertical-align: top;
+                border-radius: 3px;
+                border: 1px solid transparent;
+                transition: all .3s ease;
+                background: #cc4d29;
+                border-color: #cc4d29;
+                font-weight: 600;
+                text-transform: uppercase;
+                line-height: 16px;
+                font-size: 11px;
+                :hover {
+                    background: #e4461b;
+                    border-color: #e4461b;
+                }
+
+  }
+}
+
+</style>
+</head>
+
+
+
+<!--BODY STARTS-->
+<!--<section id="steps-1893">-->
+<!--    <div class="cs-container">-->
+<!--</div>-->
+<!--    <div class="cs-wrapper">-->
+<!--            <div class="cs-content">-->
+<!--                <span class="cs-topper">Christian Eid</span>-->
+<!--                <span class="cs-topper">Welcome! 🙂 </span>-->
+
+<!--                <h2 class="cs-title">About this website</h2>-->
+<!--            </div>-->
+<!--    </div>-->
+<!--                <ul class="cs-card-group">-->
+
+<!--                    <div class="cs-flex">-->
+<!--                        <h3 class="cs-h3">Advanced Python</h3>-->
+<!--                        <p class="cs-item-text">-->
+
+<!--                            In many of my advanced python classes this semester, my student's had the opportunity to build their own website. (They are all beautiful!!!)-->
+<!--                            <br>-->
+<!--                            &emsp;However, hosting the website online is not a part of the curriculum, which is a bummer because if you spend 8 weeks building a website it would be awesome to have it online! The reason is that you it would cost money to host a server for each student. This website is a solution to that problem!-->
+<!--                            This website, pythonanywhere, allows me to host a Flask web app for free, but I am only able to host one website.-->
+<!--<br>-->
+<!--                           <b> <p style = "text-align:center;">So, as a way of having all my student's websites go online and remain online for free, I created this!</p>-->
+<!--                            </b>-->
+
+<!--                        </p>-->
+
+<!--                    </div>-->
+
+<!--                <div class="cs-wrapper">-->
+<!--            <div class="cs-content">-->
+<!--            <h2 class="cs-title">Dear Students!</h2>-->
+<!--                <h3 class="cs-title" style = "font-size:40px;">You can own it!</h3>-->
+<!--            </div>-->
+<!--    </div>-->
+<!--                    <div class="cs-flex">-->
+<!--                        <h3 class="cs-h3">Creating your own account</h3>-->
+<!--                        <p class="cs-item-text">-->
+
+<!--<b>-->
+<!--<p style = "text-align:center;">-->
+<!--                                If I don't log into my pythonanywhere account once every three months, this website will go down.-->
+<!--                            </p></b>-->
+<!--                            <br>-->
+
+<!--                            You can create your own pythonanywhere account! If you would like, I can help set up your website so that you can have-->
+<!--                            full control. <br>-->
+<!--                             I indend to keep it up, but if you want to have access forever, I recommend that you make your own account.-->
+<!--                            Once you set it up, you can have your website online forever, you just need to log in once every three months. Not only that, but you can make changes!-->
+
+<!--                        </p>-->
+
+
+
+<!--                    </div>-->
+<!--                </ul>-->
+<!--</section>-->
+
+<section id="steps-1893">
+<a href = '/'>
+    <button class = 'homebutton' >Home</button>
+</a>
+    <div class="cs-wrapper">
+            <div class="cs-content">
+                <span class="cs-topper">Welcome!</span>
+                <h2 class="cs-title">About this website</h2>
+                <span class="cs-topper">Christian Eid</span>
+            </div>
+    </div>
+                <ul class="cs-card-group">
+
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">This is a Website for my students!</h3>
+                        <p class="cs-item-text">
+
+                            In many of my advanced python classes this semester, my student's had the opportunity to build their own website!  (and they are all beautiful websites!!!)
+                            <br>
+                            &emsp;However, hosting a website online is not something we usually do; the problem is that it costs money to host lots of websites, especially for the extended future. My students, however, were extremely excited about the idea of putting their website online. (And So was I!) It would be awesome to have it online,
+
+                            and remain online forever! This website is a solution to that problem!
+                            Through a service on the website pythonanywhere, I am able to host a Flask web app for free! But I am only able to host one website.
+<br>
+                           <b> <p style = "text-align:center;">So, as a way of having all my student's websites go online and remain online for free, I created this! A website that contains all of my students websites. </p>
+                            </b>
+
+                        </p>
+
+                    </div>
+
+                <div class="cs-wrapper">
+            <div class="cs-content">
+            <h2 class="cs-title">Dear Students!</h2>
+                <h4 class="cs-title" style = "font-size:30px;">You can own it!</h4>
+            </div>
+    </div>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Creating your own account</h3>
+                        <p class="cs-item-text">
+
+<b>
+<p style = "text-align:center;">
+                                If I don't log into my pythonanywhere account once every three months, this website will go down. (temporarily until I log back in)
+                            </p></b>
+                            <br>
+
+                            You can create your own pythonanywhere account! It's free, you can create a new gmail for it or use any email. All you need is to put the code up on the website!
+                            I can help set up your website so that you can have full control. If you would like to do that, email <b>christian.penguinstudents@gmail.com </b> and I can do one of 3 things:
+                        <ol>
+                            <li>Create a new gmail & pythonanywhere.com account, put your site up, and send you the login information</li>
+                            <li>Help set up your pythonanywhere.com account. If you create your own account, and send me the login information, I can set it up, and you can change the login info after.</li>
+                            <li>Send you the code! You can use pythonanywhere or whatever free hosting service you would like. </li>
+                        </ol>
+                        <br>
+                             I indend to keep it up, but if you want to have access forever, I recommend that you make your own account.
+                            Once you set it up, you can have your website online forever, you just need to log in once every three months. Not only that, but you can make changes!
+
+                        </p>
+                        <p>Lastly, if you see any bugs or errors in your website that need fixing, email the same e-mail as above.</p>
+
+
+                    </div>
+                </ul>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

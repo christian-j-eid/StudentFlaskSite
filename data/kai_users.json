@@ -1,0 +1,34 @@
+[
+  {
+    "user": "christian",
+    "password": "test",
+    "score": [
+      0,
+      0
+    ]
+  },
+  {
+    "user": "c",
+    "password": "c",
+    "score": [
+      0,
+      0
+    ]
+  },
+  {
+    "user": "Kai",
+    "password": "haha",
+    "score": [
+      0,
+      0
+    ]
+  },
+  {
+    "user": "example",
+    "password": "example",
+    "score": [
+      0,
+      0
+    ]
+  }
+]

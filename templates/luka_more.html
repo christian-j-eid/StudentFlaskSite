@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>luka site</title>
+
+ <style>
+
+      body{
+        background-color: #c0f3fc ;
+        text-align :  center;
+        }
+.button-54 {
+    font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+</style>
+
+
+
+
+</head>
+
+<body>
+
+<h1>{{pokemon}} Additional Page</h1>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Ability</th>
+      <!--<th scope="col">Stats</th>-->
+      <th scope="col">Height</th>
+      <th scope="col">Weight</th>
+      <th scope="col">Species</th>
+      <!--<th scope="col">Moves</th>-->
+      <th scope="col">Sprites</th>
+
+<!--      <th scope="col">Picture</th>-->
+<!--      <th scope="col">Add to account</th>    <th scope="col">Pokemon</th>-->
+<!--      <th scope="col">Picture</th>-->
+<!--      <th scope="col">Add to account</th>-->
+    </tr>
+  </thead>
+  <tbody>
+
+    {% for thing in data.abilities%}
+    <tr>
+      <th scope="row">{{thing.ability.name}}</th>
+      <td>{{data.height}}</td>
+      <td>{{data.weight}}</td>
+      <td>TO add!</td>
+
+    </tr>
+
+
+
+
+
+    </tr>
+
+  {% endfor %}
+  </tbody>
+</table>
+
+<a href = '/lukaBack'>
+<button>Back</button>
+</a>
+<hr>
+<a href = '/luka'>
+<button>Home</button>
+</a>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

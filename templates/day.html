@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <meta charset="UTF-8">
+    <title>{{day}}</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+body{
+        background-color: #C0B9DD ;
+        text-align : center;
+        color:#80A1D4;
+        font-family:"Sometype Mono", monospace;
+}
+h2{
+    color:#0a154d;
+}
+
+.wrapper-h1 {
+  margin-right: auto;
+  margin-left:  auto;
+
+  max-width: 700px;
+
+  padding-right: 10px;
+  padding-left:  10px;
+
+    background-color: pink;
+
+}
+
+
+
+.container-xl{
+    background-color:#80A1D4;
+    min-height:120px;
+
+}
+
+.div-left{
+    text-align:left;
+    margin-right:10px;
+}
+
+h1{
+    text-align: center;
+    color:#75C9C8;
+    font-size:60px;
+    -webkit-text-stroke: 0.5px #250a0a;
+/*    display: inline;*/
+
+}
+/*3*/
+.button-54 {
+    position : absolute;
+    left: 10px;
+
+    display: inline;
+  margin-right: auto;
+  margin-left: 0;
+  text-align:left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #250a0a;
+  cursor: pointer;
+  border: 3px solid;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+/*  position: left;*/
+    margin-top:15pt;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+
+.button-center{
+    text-align:center;
+
+
+/*    display: inline;*/
+  margin-right: auto;
+  margin-left: 0;
+  text-align:left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #250a0a;
+  cursor: pointer;
+  border: 3px solid;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+/*  position: left;*/
+    margin-top:15pt;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-center:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+<div class = 'container-xl'>
+    <a href = '/'><button class = 'button-54'>Back</button></a>
+    <br>
+    <div class = "wrapper-h1">
+        <h1>{{day}} Website </h1>
+    </div>
+
+
+
+</div>
+
+
+    {% if day == "Sample"  %}
+        <p>
+            <h2>
+    Sample Website to demonstrate the idea of hosting all of my student webpages on one page because it costs money to host more than one site.
+            </h2>
+
+    <a href = '/Sample'>
+                <button class = 'button-center'>
+                    Go To Sample Website
+                </button>
+            </a>
+        </p>
+    {% endif %}
+    <!--RUSSELL-->
+    {% if day == "Russell"  %}
+        <p>
+            <h2>
+Russell's One Piece Website  </h2>
+<h3>Get's One Piece info through API Calls. (Which sometimes break)s</h3>
+
+    <a href = '/russell'>
+                <button class = 'button-center'>
+                    Go To Website
+                </button>
+            </a>
+        </p>
+    {% endif %}
+    {% if day == "Luka"  %}
+        <p>
+            <h2>
+Luka's Amazing Pokemon Database Website  </h2>
+<h3>Get's Pokemon info through API Calls. Amazing! :)</h3>
+
+    <a href = '/luka'>
+                <button class = 'button-center'>
+                    Go To LukaPokeData
+                </button>
+            </a>
+        </p>
+    {% endif %}
+
+  {% if day == "Ben"  %}
+        <p>
+            <h2>
+Ben's beautiful masterpiece!            </h2>
+
+    <a href = '/ben'>
+                <button class = 'button-center'>
+                    Go To Ben's Website
+                </button>
+            </a>
+        </p>
+    {% endif %}
+     {% if day == "Rose"  %}
+        <p>
+            <h2>
+Press this button or be sent to neptune           </h2>
+
+    <a href = '/rose'>
+                <button class = 'button-center'>
+                    Press it!!!!!!!!!!!!!!!!!!!!!!!
+                </button>
+            </a>
+        </p>
+    {% endif %}
+ {% if day == "Kai"  %}
+        <p>
+            <h2>
+Kai's User & Snake Website          </h2>
+
+    <a href = '/kai'>
+                <button class = 'button-center'>
+                    Start Game
+                </button>
+            </a>
+        </p>
+    {% endif %}
+
+     {% if day == "Noah"  %}
+        <p>
+            <h2>
+Noah's Amazing Important Link Website (with password manager to be added) </h2>
+<h3>Uses json for data storage, user registration and login, and works great! </h3>
+    <a href = '/noah'>
+                <button class = 'button-center'>
+                    Noah's Important Link Saver
+                </button>
+            </a>
+        </p>
+    {% endif %}
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
