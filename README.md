@@ -1,2 +1,5 @@
 # StudentFlaskSite
-christianstudents.pythonanywhere.com In my role as teacher, I taught a couple of student's how to create a Flask website. In order to host their website, I used pythonanywhere and created a Flask App of my own. 
+
+In my role as teacher, I taught a couple of student's how to create a Flask website. In order to host their website, I used pythonanywhere and created a Flask App of my own. 
+
+<a href = 'christianstudents.pythonanywhere.com'>Visit the site</a>
